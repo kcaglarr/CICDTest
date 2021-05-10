@@ -10,7 +10,7 @@
 
  open_report(true)
 
- devices ["iPhone 11+", "iPhone 8"]
+ devices ["iPhone 11", "iPhone 8"]
 
  slack_url "https://marketyoworkspace.slack.com"
 

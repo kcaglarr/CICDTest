@@ -10,24 +10,22 @@ import XCTest
 
 class CICDTestTests: XCTestCase {
 
-    var viewController : ViewController!
+    var operations : Operations!
     
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        viewController = ViewController()
-        
+        operations = Operations()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        operations = nil
+    }
+    
+    func testSum() throws {
+        XCTAssertEqual(operations.sum(x: 2, y: 4), 6)
     }
 
-    func sumTest() throws {
-        XCTAssertEqual(viewController.sum(x: 3, y: 5), 8)
-    }
-
-    func multiplyTest() throws {
-        XCTAssertEqual(viewController.sum(x: 3, y: 4), 15)
+    func testMultiply() throws {
+        XCTAssertEqual(operations.multiply(x: 3, y: 5), 12)
     }
 
 }
