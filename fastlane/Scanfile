@@ -12,9 +12,9 @@
 
  devices ["iPhone 8"]
 
- #slack_url "https://marketyoworkspace.slack.com"
+ slack_url "https://marketyoworkspace.slack.com"
 
- slack_url "https://hooks.slack.com/services/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"
+ slack_channel "https://hooks.slack.com/services/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"
 
  slack_message "Build is completed"
 
