@@ -27,7 +27,7 @@ class CICDTestTests: XCTestCase {
     }
 
     func multiplyTest() throws {
-        XCTAssertEqual(viewController.sum(x: 3, y: 5), 15)
+        XCTAssertEqual(viewController.sum(x: 3, y: 4), 15)
     }
 
 }
